@@ -2,6 +2,7 @@ package com.turntabl;
 
 import BasicJava.Lecture;
 import BasicJava.Student;
+import Inheritance.NaughtyStudent;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,22 +30,20 @@ public class Main {
         grades3.add(22.00);
         grades3.add(15.00);
         grades3.add(90.00);
-        Student student3 = new Student(grades3);
+        NaughtyStudent nstudent3 = new NaughtyStudent(grades3);
 
         ArrayList<Double> grades4 = new ArrayList<>();
         grades4.add(90.00);
         grades4.add(86.00);
         grades4.add(77.00);
         grades4.add(94.00);
-        Student student4 = new Student(grades4);
-
-        List<Student> listOfStudents=new ArrayList<>();
+        NaughtyStudent nstudent4 = new NaughtyStudent(grades4);
 
         Lecture lecture =new Lecture();
         lecture.enter(student1);
         lecture.enter(student2);
-        lecture.enter(student3);
-        lecture.enter(student4);
+        lecture.enter(nstudent3);
+        lecture.enter(nstudent4);
 
         System.out.println("The Highest Average Grade: " + lecture.getHighestAverageGrade());
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Lecture {
 
-    private List<Student> students =new ArrayList<>();
+    private List<Student> students = new ArrayList<>();
 
     public void enter(Student student) {
 
