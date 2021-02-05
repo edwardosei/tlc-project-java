@@ -46,11 +46,7 @@ public class Main {
         lecture.enter(student3);
         lecture.enter(student4);
 
-        System.out.println(lecture.getHighestAverageGrade());
-
-
-//
-//        System.out.println("Average Grade: " + student.getAverageGrade());
+        System.out.println("The Highest Average Grade: " + lecture.getHighestAverageGrade());
 
 
     }
