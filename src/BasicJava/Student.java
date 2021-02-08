@@ -1,10 +1,13 @@
 package BasicJava;
 
+import AbstractTypes.Nameable;
+
 import java.util.List;
 
-public class Student {
+public class Student implements Nameable {
 
     protected List<Double> studentGrades;
+    protected String name;
 
     public Student(List<Double> studentGrades) {
         this.studentGrades = studentGrades;
@@ -24,5 +27,10 @@ public class Student {
 
         return averageGrade;
 
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
     }
 }
