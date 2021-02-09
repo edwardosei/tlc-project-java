@@ -1,11 +1,10 @@
 package com.turntabl;
 
-import BasicJava.Lecture;
-import BasicJava.Student;
-import Inheritance.NaughtyStudent;
+import com.turntabl.BasicJava.Lecture;
+import com.turntabl.BasicJava.Student;
+import com.turntabl.Inheritance.NaughtyStudent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
@@ -46,7 +45,5 @@ public class Main {
         lecture.enter(nstudent4);
 
         System.out.println("The Highest Average Grade: " + lecture.getHighestAverageGrade());
-
-
     }
 }

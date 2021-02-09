@@ -1,4 +1,4 @@
-package Inheritance;
+package com.turntabl.Inheritance;
 
 import org.junit.jupiter.api.Test;
 

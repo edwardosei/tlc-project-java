@@ -1,4 +1,4 @@
-package BasicJava;
+package com.turntabl.BasicJava;
 
 import java.util.List;
 

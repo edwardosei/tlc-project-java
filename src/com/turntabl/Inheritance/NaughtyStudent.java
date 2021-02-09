@@ -1,6 +1,6 @@
-package Inheritance;
+package com.turntabl.Inheritance;
 
-import BasicJava.Student;
+import com.turntabl.BasicJava.Student;
 
 import java.util.List;
 
