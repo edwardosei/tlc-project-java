@@ -1,16 +1,39 @@
 package BasicJava;
 
 import AbstractTypes.Nameable;
+import Enums.HasLevel;
+import Enums.Level;
 
 import java.util.List;
 
-public class Student implements Nameable {
+public class Student implements Nameable, HasLevel {
 
     protected List<Double> studentGrades;
-    protected String name;
+    private String name;
+    private Level level;
 
     public Student(List<Double> studentGrades) {
+//        this(studentGrades, name, level);
         this.studentGrades = studentGrades;
+
+    }
+
+    public Student(List<Double> studentGrades, String name) {
+        this(studentGrades);
+        this.name = name;
+
+    }
+
+    public Student(List<Double> studentGrades, String name, Level level) {
+        this(studentGrades, name);
+        this.level = level;
+
+    }
+
+    public Student(List<Double> studentGrades, Level level) {
+        this(studentGrades);
+        this.level = level;
+
     }
 
     public double getAverageGrade() {
@@ -32,5 +55,10 @@ public class Student implements Nameable {
     @Override
     public String getName() {
         return this.name;
+    }
+
+    @Override
+    public Level getLevel() {
+        return this.level;
     }
 }

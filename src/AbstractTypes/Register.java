@@ -1,19 +1,35 @@
 package AbstractTypes;
 
+import BasicJava.Student;
+import Enums.Level;
+
 import java.util.ArrayList;
 
 public class Register {
-    protected ArrayList<Nameable> studentRegister;
+    protected ArrayList<Student> studentRegister;
 
-    public Register(ArrayList<Nameable> People) {
+    public Register(ArrayList<Student> People) {
         this.studentRegister = People;
     }
 
     public ArrayList<String> getRegister() {
         ArrayList<String> studentNames =  new ArrayList<>();
-        for(Nameable student : studentRegister) {
+        for(Student student : studentRegister) {
             studentNames.add(student.getName());
         }
+        return studentNames;
+    }
+
+    public ArrayList<Student> getRegisterByLevel(Level level) {
+//        ArrayList<Student> studentOfLevel = new ArrayList<>();
+        ArrayList<Student> studentNames =  new ArrayList<>();
+        for(Student aStudent: studentRegister) {
+                if (aStudent.getLevel() == level) {
+                    studentNames.add(aStudent);
+                }
+        }
+
+//        studentOfLevel.add(studentNames);
         return studentNames;
     }
 }
